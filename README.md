@@ -76,7 +76,9 @@ podman run --privileged --network=host --name=wpa_supplicant-udmpro -v /mnt/data
 ## Finishing Up
 Lastly, you need to install the boot script to ensure your UDM-SE autostarts wpa_supplicant on reboot:
 
+```
 curl -fsL "https://raw.githubusercontent.com/boostchicken/udm-utilities/HEAD/on-boot-script/remote_install.sh" | /bin/sh
+```
 
 Copy this boot script for wpa_supplicant to /mnt/data/on_boot.d
 https://github.com/boostchicken-dev/udm-utilities/blob/master/on-boot-script/examples/udm-files/on_boot.d/10-wpa_supplicant.sh
